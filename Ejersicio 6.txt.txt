@@ -1,0 +1,30 @@
+class program
+{ // class
+    program ()
+    { //p
+     while (frontIsClear)
+       { // w
+           if (notNextToABeeper) 
+           { // if
+           putbeeper(); 
+             move();
+          }  // if  
+          if (frontIsBlocked)
+          { // if2
+             iterate (3) 
+             { // Int
+                  turnleft();        
+             } // Int
+            } // if2
+           if (nextToABeeper)
+           { // If3
+            move();            
+           turnoff();
+           } // If3
+       } // w
+
+       
+      
+        
+    } //p
+} // class

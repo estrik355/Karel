@@ -1,0 +1,45 @@
+class program
+{
+ // Gira hacia la derecha.
+ void turnright()
+  {
+    turnleft();
+    turnleft();
+    turnleft();
+  }
+  
+  void suigueElMuroDerecho()
+  {
+    if (rightIsBlocked)
+    {
+      move();
+    }
+  }
+ 
+  void frenteDerechoBloked()
+  {
+     if (rightIsBlocked && frontIsBlocked	 )
+    {
+      turnleft();
+         if (rightIsBlocked && frontIsBlocked	 )
+         {
+           turnleft();
+         }
+         if (rightIsClear)
+         {
+           turnleft();
+           move();
+         }
+    }
+  }
+    program ()
+    {
+       while (notNextToABeeper)
+       {
+       
+        suigueElMuroDerecho();
+        frenteDerechoBloked();
+       } 
+        turnoff();
+    }
+}

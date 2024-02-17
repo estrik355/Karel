@@ -1,0 +1,31 @@
+class program 
+{
+  void SiNoEsCero (n) 
+  {
+
+   if ( iszero (n))
+   {
+
+      putbeeper();
+      
+   }
+
+   else
+   {
+
+      iterate (n) 
+      {
+
+         pickbeeper();
+         
+      }
+
+   }
+
+}
+    program ()
+    {
+        SiNoEsCero(7);
+        turnoff();
+    }
+}

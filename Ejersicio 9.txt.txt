@@ -1,0 +1,23 @@
+class program 
+{
+  void avanzaNoChoca(n)
+    {
+     iterate (n)
+     {
+        if (frontIsClear)
+        {
+          move();
+        }
+        else 
+        {
+        turnleft();
+        }
+
+     }
+   }
+  program ()
+    {
+        avanzaNoChoca(11);
+        turnoff();
+    }
+}

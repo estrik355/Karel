@@ -1,0 +1,70 @@
+class program {
+   
+void turnright()
+{
+turnleft();
+turnleft();
+turnleft();
+}
+void posicionarse()
+{
+turnright();
+move();
+move();
+turnleft();
+}
+void desplazamiento_V()
+{
+if(frontIsClear)
+{
+move();
+desplazamiento_V();
+if(frontIsBlocked && nextToABeeper)
+{
+pickbeeper();
+turnleft();
+turnleft();
+move();
+}
+
+else
+move();
+}
+}
+void desplazamiento_H()
+{
+if(frontIsClear)
+{
+move();
+desplazamiento_H();
+if(facingNorth)
+{
+ turnright();
+ move();
+ }
+ else
+ move();
+ }
+ else
+ {
+ turnleft();
+ desplazamiento_V();
+ }
+ }
+void hogar()
+{
+turnright();
+ move();
+ move();
+ turnright();  
+}
+
+    program () {
+        // TODO poner codigo aqui
+        posicionarse();
+        desplazamiento_H();
+        hogar();
+        turnoff();
+    }
+}
+       
